@@ -1,0 +1,56 @@
+
+%Préambule du document :
+\documentclass[11pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[francais]{babel}
+
+\title{RAPPORT DE L'UE: CODER POUR LA VR L'XR ET L'AR II	ANI-IA 4068 AN-PJ 4068}
+\author{Rapport de: ONGUENE ZANGA Louis Dieudonné 20P005}
+\date{Examinateur: M.TEUGUIA Rodolphe}
+
+%Corps du document :
+\begin{document}
+	\maketitle
+	\tableofcontents
+	
+
+	\chapter{Introduction}
+	Voici un peu de texte dans le premier chapitre de mon document. Pour le moment, mon document n'a pas énormément d'intérêt, si ce n'est de montrer comment il est possible de structurer simplement un document sous LaTeX !
+	\section{Présentation du projet}
+	Le projet consiste à développer un programme capable de détecter si une touche du clavier était enfoncée en utilisant la bibliothèque Pygame. 
+	
+	\begin{figure}
+		\centering
+	
+		
+		\label{fig:toutatis}
+	\end{figure}
+	
+	\section{Objectif}
+L'objectif ést de créer une fenêtre graphique et de surveiller les événements du clavier pour identifier les touches pressées par l'utilisateur.
+	\chapter{Méthodologie}
+	\section{Initialisation de Pygame}
+	La bibliothèque Pygame a été importée et initialisée pour pouvoir utiliser ses fonctionnalités, par la commande "py -m pip install pygame"
+	\section{Création de la fenêtre}
+	Une fenêtre graphique a été créée à l'aide de la fonction "pygame.display.set-mode(), spécifiant les dimensions de la fenêtre.
+	\section{Gestion des événements}
+	Une boucle principale a été mise en place pour gérer les événements.
+	La boucle parcourt tous les événements capturés par pygame.event.get().
+	Si l'événement est de type pygame.QUIT, le programme se termine en mettant la variable running à False.
+	Si l'événement est de type pygame.KEYDOWN, cela signifie qu'une touche a été enfoncée.
+	La touche enfoncée est enregistrée dans le dictionnaire keys en tant que clé, avec une valeur booléenne True.
+	Le nom de la touche est affiché à des fins de démonstration.
+	Si l'événement est de type pygame.KEYUP, cela signifie qu'une touche a été relâchée.
+	La touche relâchée est enregistrée dans le dictionnaire keys avec une valeur booléenne False.
+	Le nom de la touche est affiché à des fins de démonstration.
+	\section{Affichage de la fenêtre}
+La fonction pygame.display.update() est appelée pour mettre à jour la fenêtre graphique à chaque itération de la boucle principale.
+	\section{Création de la fenêtre}
+	Une fenêtre graphique a été créée à l'aide de la fonction "pygame.display.set-mode(), spécifiant les dimensions de la fenêtre.
+	\section{Conclusion}
+	Une fois que l'utilisateur a quitté la fenêtre en cliquant sur la croix de fermeture ou en appuyant sur la touche "ESC", le programme se termine.
+	Le programme permet de détecter si une touche du clavier est enfoncée et affiche le nom de la touche enfoncée ou relâchée à des fins de démonstration.
+	\chapter{Conclusion}
+	Ce projet a réussi à réaliser la détection des touches du clavier en utilisant la bibliothèque Pygame. En fournissant une interface graphique et en surveillant les événements du clavier, le programme est capable de détecter les touches pressées et relâchées par l'utilisateur. Ce code peut être utilisé comme point de départ pour des projets plus avancés impliquant la gestion des entrées utilisateur à l'aide de Pygame.
+	
+\end{document}
